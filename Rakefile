@@ -4,6 +4,9 @@ require 'foodcritic'
 require 'rspec/core/rake_task'
 require 'rubocop/rake_task'
 
+desc "build and run Docker container"
+task :default => [:build_qemu]
+
 desc "Syntax check and build QEMU"
 task :build_qemu => [ :packer_build_qemu]
 
