@@ -124,7 +124,8 @@
   "post-processors": [
     {
       "output": "builds/{{user `box_basename`}}.{{.Provider}}.box",
-      "type": "vagrant"
+      "type": "vagrant",
+      "only": ["virtualbox-iso"]
     }
   ],
   "provisioners": [
@@ -169,7 +170,7 @@
     "mirror_directory": "7.1.1503/isos/x86_64",
     "name": "centos-7.1",
     "no_proxy": "{{env `no_proxy`}}",
-    "template": "centos-7.1-x86_64",
+    "template": "cpackel-centos-7.1-x86_64",
     "version": "2.1.TIMESTAMP"
   }
 }
