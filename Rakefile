@@ -13,3 +13,12 @@ task :build_qemu => [ :packer_build_qemu]
 task :packer_build_qemu do
   sh 'packer build -only=qemu cpackel-centos-7.1-x86_64.json'
 end
+
+task :clean do
+  sh 'rm -Rf builds'
+end
+
+task :build_qemu_dnsonly do
+  sh 'packer build -only=qemu cpackel-dnsonly-centos-7.1-x86_64.json'
+end
+
