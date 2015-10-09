@@ -26,7 +26,7 @@
           "modifyvm",
           "{{.Name}}",
           "--memory",
-          "480"
+          "1024"
         ],
         [
           "modifyvm",
@@ -61,7 +61,7 @@
       "vm_name": "{{ user `template` }}",
       "vmx_data": {
         "cpuid.coresPerSocket": "1",
-        "memsize": "480",
+        "memsize": "1024",
         "numvcpus": "1"
       }
     },
@@ -83,7 +83,7 @@
           "set",
           "{{.Name}}",
           "--memsize",
-          "480"
+          "1024"
         ],
         [
           "set",
@@ -119,6 +119,9 @@
       "ssh_port": 22,
       "ssh_username": "vagrant",
       "ssh_wait_timeout": "10000s",
+      "qemuargs": [
+        [ "-m", "1024M" ]
+      ],
       "type": "qemu",
       "vm_name": "{{ user `template` }}"
     }
