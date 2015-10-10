@@ -25,3 +25,8 @@ end
 task :build_qemu_cloudlinux do
   sh 'packer build -only=qemu cpackel-cloudlinux-7.1-x86_64.json'
 end
+
+task :build_vbox do
+  sh 'packer build -only=virtualbox-iso cpackel-centos-7.1-x86_64.json'
+end
+
