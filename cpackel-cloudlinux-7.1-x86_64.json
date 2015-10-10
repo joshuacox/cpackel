@@ -157,7 +157,7 @@
     }
   ],
   "variables": {
-    "box_basename": "centos-7.1",
+    "box_basename": "cloudlinux-7.1",
     "build_timestamp": "{{isotime \"20060102150405\"}}",
     "git_revision": "__unknown_git_revision__",
     "headless": "",
@@ -170,9 +170,9 @@
     "metadata": "floppy/dummy_metadata.json",
     "mirror": "http://repo.cloudlinux.com",
     "mirror_directory": "cloudlinux/7/iso/x86_64",
-    "name": "centos-7.1",
+    "name": "cloudlinux-7.1",
     "no_proxy": "{{env `no_proxy`}}",
-    "template": "cpackel-centos-7.1-x86_64",
+    "template": "cpackel-cloudlinux-7.1-x86_64",
     "version": "2.1.TIMESTAMP"
   }
 }

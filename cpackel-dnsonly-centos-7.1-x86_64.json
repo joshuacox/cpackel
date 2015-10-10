@@ -171,9 +171,9 @@
     "metadata": "floppy/dummy_metadata.json",
     "mirror": "http://mirrors.kernel.org/centos",
     "mirror_directory": "7.1.1503/isos/x86_64",
-    "name": "centos-7.1",
+    "name": "centos-dnsonly-7.1",
     "no_proxy": "{{env `no_proxy`}}",
-    "template": "cpackel-centos-7.1-x86_64",
+    "template": "cpackel-dnsonly-centos-7.1-x86_64",
     "version": "2.1.TIMESTAMP"
   }
 }
