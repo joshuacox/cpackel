@@ -5,7 +5,13 @@ Packer builder for cPanel
 rake
 ```
 
-should build a raw image for KVM in builds/
+should build a raw qemu image for KVM in builds/
+
+```
+rake build_vbox
+```
+
+should build a virtual box image for KVM in builds/
 
 ```
 rake build_qemu_dnsonly
