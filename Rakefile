@@ -1,8 +1,8 @@
 #!/usr/bin/env rake
 # encoding: utf-8
-require 'foodcritic'
-require 'rspec/core/rake_task'
-require 'rubocop/rake_task'
+#require 'foodcritic'
+#require 'rspec/core/rake_task'
+#require 'rubocop/rake_task'
 
 desc "build and run Docker container"
 task :default => [:build_qemu]
