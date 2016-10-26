@@ -11,7 +11,7 @@ desc "Syntax check and build QEMU"
 task :build_qemu => [ :packer_build_qemu]
 
 task :packer_build_qemu do
-  sh 'packer build -only=qemu cpackel-centos-7.1-x86_64.json'
+  sh 'packer build -only=qemu cpackel-centos-7.2-x86_64.json'
 end
 
 task :clean do
@@ -23,7 +23,7 @@ task :build_qemu_dnsonly do
 end
 
 task :build_qemu_cloudlinux do
-  sh 'packer build -only=qemu cpackel-cloudlinux-7.1-x86_64.json'
+  sh 'packer build -only=qemu cpackel-cloudlinux-7.2-x86_64.json'
 end
 
 task :build_vbox do
